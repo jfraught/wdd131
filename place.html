@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 | Country Page">
+    <meta name="author" content="Jordan Fraughton">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 500px)">
+                <img src="images/hero-small.jpg" alt="Guatemala">
+            </picture>
+            <div class="articles">
+                <article class="data">
+                    <h2>Data</h2>
+                    <dl class="key-value-list">
+                        <dt>Area:</dt>
+                        <dd>108,890 sq km</dd>
+                        <dt>Popultation:</dt>
+                        <dd>17.6 million</dd>
+                        <dt>Capital:</dt>
+                        <dd>Guatemala City:</dd>
+                        <dt>Languages:</dt>
+                        <dd>Spanish, K'iche'</dd>
+                        <dt>Currency:</dt>
+                        <dd>Quetzal</dd>
+                        <dt>Time Zone:</dt>
+                        <dd>GMT-6</dd>
+                        <dt>Calling Code:</dt>
+                        <dd>+502</dd>
+                        <dt>Interent TLD:</dt>
+                        <dd>.gt</dd>
+                    </dl>
+                </article>
+                <article class="weather">
+                    <h2>Weather</h2>
+                    <img src="images/weather-icon.svg" alt="Weather icon">
+                    <dl class="key-value-list">
+                        <dt>Temperature:</dt>
+                        <dd id="temp">temp</dd>
+                        <dt>Conditions:</dt>
+                        <dd id="conditions">conditions</dd>
+                        <dt>Winds:</dt>
+                        <dd id="winds">winds</dd>
+                        <dt>Wind Chill:</dt>
+                        <dd id="wind-chill">wind chill</dd>
+                    </dl>
+                </article>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Jordan Fraughton, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
